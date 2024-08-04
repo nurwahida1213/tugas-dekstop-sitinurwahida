@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demodesktop.controller.CreateBookController">
+    <top>
+        <ToolBar>
+            <Button text="Save" onAction="#handleSave"/>
+            <Button text="Cancel" onAction="#handleCancel"/>
+        </ToolBar>
+    </top>
+    <center>
+        <GridPane padding="10" hgap="10" vgap="10">
+            <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Instansi:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="instansiField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Title:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="titleField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Borrow Date:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="borrowDateField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Return Date:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="returnDateField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        </GridPane>
+    </center>
+</BorderPane>
